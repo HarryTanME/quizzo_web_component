@@ -1,6 +1,6 @@
 [
     {
-        "que": "Which among the following<br/> is not an operating system ?",
+        "que": "Window: Which among the following<br/> is not an operating system ?",
         "opt": [
             "Fedora",
             "MacOS",
@@ -10,7 +10,7 @@
         "ans": 3
     },
     {
-        "que": "Is Windows good",
+        "que": "Haha: Is Windows good",
         "opt": [
             "Yes",
             "No"
