@@ -1,6 +1,6 @@
 [
     {
-        "que": "Which among the following is not an operating system ?",
+        "que": "Which among the <u>following</u> is not an operating system ?",
         "opt": [
             "Fedora",
             "MacOS",
