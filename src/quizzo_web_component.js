@@ -29,7 +29,7 @@ class QuizzoWebComp extends HTMLElement {
       .then((questions) => {
         // question
         const que_div = this.shadowRoot.querySelector(".question")
-        que_div.innerText =`Q1: ` + questions[0].que;
+        que_div.innerHTML =`Q1: ` + questions[0].que;
         const total_ques = questions.length;
         var ques_counter = 0;
         // generating html for answers
@@ -51,7 +51,7 @@ class QuizzoWebComp extends HTMLElement {
               
               if(ques_counter<total_ques-1){
                 ques_counter++;
-                que_div.innerText =`Q${ques_counter+1}: ` + questions[ques_counter+1==1?2:ques_counter].que;
+                que_div.innerHTML =`Q${ques_counter+1}: ` + questions[ques_counter+1==1?2:ques_counter].que;
                 answers_html = "";
                 questions[ques_counter].opt.map((ans, index) => {
                   answers_html += `<label><input type="radio" name="answer" value="${index + 1}" group="answers">${ans}</label>`;
